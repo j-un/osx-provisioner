@@ -1,0 +1,38 @@
+homebrew_taps:
+  - homebrew/binary
+  - homebrew/dupes
+  - caskroom/cask
+  - sanemat/font
+homebrew_packages:
+  - { name: python }
+  - { name: ansible }
+  - { name: coreutils }
+  - { name: git }
+  - { name: wget }
+  - { name: curl }
+  - { name: tree }
+  - { name: nkf }
+  - { name: jq }
+  - { name: peco }
+  - { name: hub }
+  - { name: tig }
+  - { name: rbenv }
+  - { name: ruby-build }
+  - { name: tofrodos }
+  - { name: tmux }
+  - { name: reattach-to-user-namespace }
+  - { name: gibo }
+  - { name: source-highlight }
+  - { name: vim }
+  - { name: zsh }
+homebrew_cask_packages:
+  - { name: iterm2 }
+  - { name: google-chrome }
+  - { name: adobe-reader }
+  - { name: slack }
+  - { name: gitx }
+  - { name: atom }
+  - { name: vagrant }
+  - { name: virtualbox }
+  - { name: karabiner }
+  - { name: the-unarchiver }

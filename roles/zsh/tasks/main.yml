@@ -1,0 +1,16 @@
+---
+- name: Update /etc/shells
+  lineinfile: dest=/etc/shells state=present line='/usr/local/bin/zsh'
+  become: yes
+
+- name: Change default shell to zsh
+  shell: chpass -s /usr/local/bin/zsh
+  when: login_shell_path != "/usr/local/bin/zsh"
+
+# prezto
+- stat: path=~/.zprezto
+  register: prezto_install_path
+
+- name: Install prezto
+  git: repo=https://github.com/sorin-ionescu/prezto.git recursive=yes dest=~/.zprezto
+  when: prezto_install_path.stat.exists == False
