@@ -36,3 +36,5 @@ homebrew_cask_packages:
   - { name: virtualbox }
   - { name: karabiner }
   - { name: the-unarchiver }
+  - { name: alfred }
+  - { name: onyx }
