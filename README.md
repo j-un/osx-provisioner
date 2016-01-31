@@ -1,9 +1,6 @@
 ## What's this
 * OSX provisioner just for me.
 
-## Description
-
-
 ## Prerequisite Tasks
 1. Install Homebrew and Ansible.
 ```
@@ -20,22 +17,22 @@ $ git clone git@github.com:mapps-jtanaka/osx-provisioner.git
 ```
 
 ## Usage
-1. Exec all
+* Exec all
 ```
 $ make
 ```
 
-1. Dry run
+* Dry run
 ```
 $ make test
 ```
 
-1. Only "brew install/update"
+* Only "brew install/update"
 ```
 $ make brew
 ```
 
-1. etc...
+* etc...
 ```
 $ make dot
 $ make fonts
