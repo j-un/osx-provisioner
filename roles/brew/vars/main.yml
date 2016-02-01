@@ -38,3 +38,4 @@ homebrew_cask_packages:
   - { name: the-unarchiver }
   - { name: alfred }
   - { name: onyx }
+  - { name: shiftit }
