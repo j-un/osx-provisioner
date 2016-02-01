@@ -17,7 +17,7 @@ $ git clone git@github.com:mapps-jtanaka/osx-provisioner.git
 ```
 
 ## Usage
-* Exec all
+* That's all
 ```
 $ make
 ```
