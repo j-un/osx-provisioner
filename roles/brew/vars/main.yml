@@ -39,3 +39,6 @@ homebrew_cask_packages:
   - { name: alfred }
   - { name: onyx }
   - { name: shiftit }
+  - { name: tomighty }
+  - { name: phpstorm }
+  - { name: terraform }
