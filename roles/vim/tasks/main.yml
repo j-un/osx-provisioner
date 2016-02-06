@@ -1,0 +1,10 @@
+---
+- name: Check brew list vim
+  shell: brew list | grep vim
+  register: vim_is_installed
+  ignore_errors: True
+  changed_when: False
+
+- name: Install neobundle
+  git: repo=https://github.com/Shougo/neobundle.vim recursive=yes dest=~/.vim/bundle/neobundle.vim
+  when: vim_is_installed != ""
