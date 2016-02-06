@@ -10,3 +10,4 @@
     - { role: fonts, tags: fonts }
     - { role: zsh, tags: zsh }
     - { role: dotfiles, tags: dotfiles }
+    - { role: vim, tags: vim }

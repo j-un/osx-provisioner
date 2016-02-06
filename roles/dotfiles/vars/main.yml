@@ -7,3 +7,4 @@ dotfiles_name:
   - .zshenv
   - .zshrc
   - .tmux.conf
+  - .vimrc

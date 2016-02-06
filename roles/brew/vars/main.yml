@@ -7,6 +7,7 @@ homebrew_packages:
   - { name: python }
   - { name: ansible }
   - { name: coreutils }
+  - { name: ctags }
   - { name: git }
   - { name: wget }
   - { name: curl }
@@ -22,6 +23,7 @@ homebrew_packages:
   - { name: tmux }
   - { name: reattach-to-user-namespace }
   - { name: gibo }
+  - { name: the_silver_searcher}
   - { name: source-highlight }
   - { name: vim }
   - { name: zsh }
@@ -42,3 +44,4 @@ homebrew_cask_packages:
   - { name: phpstorm }
   - { name: terraform }
   - { name: pomotodo }
+  - { name: visual-studio-code }

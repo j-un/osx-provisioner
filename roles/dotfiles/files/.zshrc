@@ -13,3 +13,6 @@ fi
 # Customize to your needs...
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="vim"
+
+# alias
+alias ctags="`brew --prefix`/bin/ctags"

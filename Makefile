@@ -16,3 +16,6 @@ zsh:
 dot:
 	ansible-playbook osx.yml -i "localhost," --tags=dotfiles
 
+vim:
+	ansible-playbook osx.yml -i "localhost," --tags=vim
+
