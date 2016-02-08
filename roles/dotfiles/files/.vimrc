@@ -9,6 +9,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/taglist.vim'
@@ -26,10 +27,21 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
+" leader
+let mapleader = ","
+
 " colorscheme
 set background=dark
 colorscheme hybrid
 syntax on
+
+" for unite
+nnoremap [unite]    <Nop>
+nmap     <leader>u [unite]
+nnoremap <silent> [unite]b   :<C-u>Unite buffer<CR>
+nnoremap <silent> [unite]f   :<C-u>Unite file<CR>
+nnoremap <silent> [unite]m   :<C-u>Unite file_mru<CR>
+nnoremap <silent> [unite]u   :<C-u>Unite buffer file_mru file<CR>
 
 " for lightline
 set laststatus=2
