@@ -10,9 +10,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# env
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="vim"
 
 # alias
 alias ctags="`brew --prefix`/bin/ctags"
+
+# misc
+if [ -z $TMUX ] ; then
+    if [ -z "`ps aux | grep tmux | grep -v grep`" ] ; then
+        tmux
+    else
+        tmux attach
+    fi
+fi
