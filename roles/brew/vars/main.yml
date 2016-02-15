@@ -16,6 +16,7 @@ homebrew_packages:
   - { name: jq }
   - { name: peco }
   - { name: hub }
+  - { name: node }
   - { name: tig }
   - { name: rbenv }
   - { name: ruby-build }
@@ -25,7 +26,7 @@ homebrew_packages:
   - { name: gibo }
   - { name: the_silver_searcher}
   - { name: source-highlight }
-  - { name: vim }
+  - { name: vim, options: 'with-lua' }
   - { name: zsh }
 homebrew_cask_packages:
   - { name: iterm2 }
