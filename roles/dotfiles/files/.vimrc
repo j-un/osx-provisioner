@@ -19,6 +19,7 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'scrooloose/nerdtree'
+"NeoBundle 'scrooloose/syntastic'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'rking/ag.vim'
@@ -68,6 +69,15 @@ set laststatus=2
 
 "" for NERDTree
 map <silent> <leader>e :NERDTreeToggle<cr>
+
+"" for Syntastic
+"let g:syntastic_mode_map = {
+"  \ 'mode': 'active',
+"  \ 'active_filetypes': ['php']
+"  \}
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_php_checkers = ['phpcs']
+"let g:syntastic_php_phpcs_args = '--standard=psr2'
 
 "" for taglist
 let Tlist_Show_One_File = 1
