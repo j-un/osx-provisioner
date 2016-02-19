@@ -8,3 +8,4 @@ dotfiles_name:
   - .zshrc
   - .tmux.conf
   - .vimrc
+  - .ctags
