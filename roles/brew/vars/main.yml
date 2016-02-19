@@ -1,6 +1,7 @@
 homebrew_taps:
   - homebrew/binary
   - homebrew/dupes
+  - homebrew/php
   - caskroom/cask
   - sanemat/font
 homebrew_packages:
@@ -15,6 +16,7 @@ homebrew_packages:
   - { name: nkf }
   - { name: jq }
   - { name: peco }
+  - { name: php-code-sniffer }
   - { name: hub }
   - { name: node }
   - { name: tig }
