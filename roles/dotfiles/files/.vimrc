@@ -25,6 +25,9 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'othree/html5.vim'
 
 call neobundle#end()
 
@@ -51,7 +54,8 @@ nnoremap <silent> [unite]f   :<C-u>Unite file<CR>
 nnoremap <silent> [unite]m   :<C-u>Unite file_mru<CR>
 nnoremap <silent> [unite]u   :<C-u>Unite buffer file_mru file<CR>
  " unite grep (recursive)
-nnoremap <silent> ,g  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+"nnoremap <silent> ,g  :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+nnoremap <silent> ,g  :<C-u>Unite grep -buffer-name=search-buffer<CR>
  " grep by word on cursor
 nnoremap <silent> ,cg :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
  " resume search result
