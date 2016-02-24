@@ -30,6 +30,7 @@ homebrew_packages:
   - { name: source-highlight }
   - { name: vim, options: 'with-lua' }
   - { name: zsh }
+  - { name: graphviz }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -48,3 +49,5 @@ homebrew_cask_packages:
   - { name: terraform }
   - { name: pomotodo }
   - { name: visual-studio-code }
+  - { name: apache-directory-studio }
+  - { name: java }
