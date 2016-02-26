@@ -25,10 +25,10 @@ function ssh() {
 }
 
 # misc
-if [ -z $TMUX ] ; then
-    if [ -z "`ps aux | grep tmux | grep -v grep`" ] ; then
-        tmux
-    else
-        tmux attach
-    fi
-fi
+#if [ -z $TMUX ] ; then
+#    if [ -z "`ps aux | grep tmux | grep -v grep`" ] ; then
+#        tmux
+#    else
+#        tmux attach
+#    fi
+#fi
