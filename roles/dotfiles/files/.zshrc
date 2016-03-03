@@ -17,6 +17,10 @@ export EDITOR="vim"
 # alias
 alias ctags="`brew --prefix`/bin/ctags"
 
+alias vau="vagrant up"
+alias vas="vagrant ssh"
+alias vah="vagrant halt"
+
 # for tmux window name
 function ssh() {
     local window_name=$(tmux display -p '#{window_name}')
