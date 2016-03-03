@@ -1,7 +1,7 @@
 ---
 - name: Tap external Homebrew repositories
   homebrew_tap: tap={{ item }} state=present
-  with_items: homebrew_taps
+  with_items: "{{ homebrew_taps }}"
 
 - name: Update Homebrew
   homebrew: update_homebrew=yes
@@ -16,7 +16,7 @@
       if item.install_options is not string
       else item.install_options
     }}
-  with_items: homebrew_packages
+  with_items: "{{ homebrew_packages }}"
   register: brew_result
 
 - name: Make directory for Brew Info
@@ -24,7 +24,7 @@
 
 - name: Log Brew Info
   shell: brew info {{ item }} > brew_info/{{ item }}
-  with_items: brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
+  with_items: "{{ brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
 
 # cask
 - name: Install/Upgrade Homebrew Cask
@@ -32,7 +32,7 @@
 
 - name: Install/Upgrade Homebrew Cask packages
   homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }}
-  with_items: homebrew_cask_packages
+  with_items: "{{ homebrew_cask_packages }}"
   register: cask_result
 
 - name: Make directory for Brew Cask Info
@@ -40,4 +40,4 @@
 
 - name: Log Brew Cask Info
   shell: brew cask info {{ item }} > cask_info/{{ item }}
-  with_items: cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
+  with_items: "{{ cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
