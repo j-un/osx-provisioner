@@ -51,3 +51,4 @@ homebrew_cask_packages:
   - { name: visual-studio-code }
   - { name: apache-directory-studio }
   - { name: java }
+  - { name: dockertoolbox }
