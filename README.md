@@ -13,7 +13,7 @@ $ brew install python ansible
 ## Install
 1. Clone this repository on any directory.
 ```
-$ git clone https://github.com/mapps-jtanaka/osx-provisioner.git
+$ git clone https://github.com/j-un/osx-provisioner.git
 ```
 
 ## Usage
