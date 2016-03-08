@@ -3,7 +3,6 @@ homebrew_taps:
   - homebrew/dupes
   - homebrew/php
   - caskroom/cask
-  - sanemat/font
 homebrew_packages:
   - { name: python }
   - { name: ansible }
