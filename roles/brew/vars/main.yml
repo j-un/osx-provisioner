@@ -52,3 +52,4 @@ homebrew_cask_packages:
   - { name: apache-directory-studio }
   - { name: java }
   - { name: dockertoolbox }
+  - { name: firefox }
