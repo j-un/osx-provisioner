@@ -1,3 +1,5 @@
+# osx-provisioner
+
 ## What's this
 * OSX provisioner just for me.
 
@@ -37,4 +39,5 @@ $ make brew
 $ make dot
 $ make fonts
 $ make zsh
+$ make vim
 ```
