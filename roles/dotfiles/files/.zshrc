@@ -13,9 +13,12 @@ fi
 # env
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="vim"
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 
 # alias
 alias ctags="`brew --prefix`/bin/ctags"
+alias ls="ls --color"
 
 alias vau="vagrant up"
 alias vas="vagrant ssh"
