@@ -15,6 +15,8 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="vim"
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
+export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+export LESS=" -R "
 
 # alias
 alias ctags="`brew --prefix`/bin/ctags"
