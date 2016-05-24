@@ -54,3 +54,4 @@ homebrew_cask_packages:
   - { name: java }
   - { name: dockertoolbox }
   - { name: firefox }
+  - { name: google-play-music-desktop-player }
