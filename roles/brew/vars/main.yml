@@ -32,6 +32,7 @@ homebrew_packages:
   - { name: graphviz }
   - { name: awscli }
   - { name: redpen }
+  - { name: elixir }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
