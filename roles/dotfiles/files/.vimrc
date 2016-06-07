@@ -25,6 +25,11 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'sjl/badwolf'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
+NeoBundle 'vim-scripts/twilight'
+NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'othree/html5.vim'
@@ -43,7 +48,7 @@ let mapleader = ","
 
 " colorscheme
 set background=dark
-colorscheme hybrid
+colorscheme Tomorrow-Night-Bright
 syntax on
 
 "" for unite
