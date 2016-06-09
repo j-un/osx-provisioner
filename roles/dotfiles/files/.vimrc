@@ -23,7 +23,6 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'sjl/badwolf'
 NeoBundle 'tomasr/molokai'
@@ -33,6 +32,9 @@ NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'othree/html5.vim'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
+NeoBundle 'tpope/vim-fugitive'
 
 call neobundle#end()
 
@@ -73,7 +75,10 @@ if executable('ag')
   let g:unite_source_grep_recursive_opt = ''
 endif
 
-"" for lightline
+"" for vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline_theme='wombat'
 set laststatus=2
 
 "" for NERDTree
