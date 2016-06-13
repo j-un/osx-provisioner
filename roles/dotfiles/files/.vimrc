@@ -35,6 +35,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'fatih/vim-go'
 
 call neobundle#end()
 
@@ -92,6 +93,14 @@ map <silent> <leader>e :NERDTreeToggle<cr>
 "let g:syntastic_auto_loc_list = 1
 "let g:syntastic_php_checkers = ['phpcs']
 "let g:syntastic_php_phpcs_args = '--standard=psr2'
+
+" for golang
+let g:go_hightlight_functions = 1
+let g:go_hightlight_methods = 1
+let g:go_hightlight_structs = 1
+let g:go_hightlight_interfaces = 1
+let g:go_hightlight_operators = 1
+let g:go_hightlight_build_constraints = 1
 
 "" for taglist
 let Tlist_Show_One_File = 1
