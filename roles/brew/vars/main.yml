@@ -33,6 +33,7 @@ homebrew_packages:
   - { name: awscli }
   - { name: redpen }
   - { name: elixir }
+  - { name: go }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -56,3 +57,4 @@ homebrew_cask_packages:
   - { name: dockertoolbox }
   - { name: firefox }
   - { name: google-play-music-desktop-player }
+  - { name: appcleaner }
