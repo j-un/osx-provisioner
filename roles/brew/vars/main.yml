@@ -58,3 +58,4 @@ homebrew_cask_packages:
   - { name: firefox }
   - { name: google-play-music-desktop-player }
   - { name: appcleaner }
+  - { name: soundnode }
