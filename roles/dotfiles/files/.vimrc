@@ -36,6 +36,7 @@ NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'hynek/vim-python-pep8-indent'
 
 call neobundle#end()
 
