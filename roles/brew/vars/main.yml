@@ -59,3 +59,4 @@ homebrew_cask_packages:
   - { name: google-play-music-desktop-player }
   - { name: appcleaner }
   - { name: soundnode }
+  - { name: licecap }
