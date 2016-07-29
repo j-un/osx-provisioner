@@ -54,7 +54,7 @@ homebrew_cask_packages:
   - { name: visual-studio-code }
   - { name: apache-directory-studio }
   - { name: java }
-  - { name: dockertoolbox }
+  - { name: docker-toolbox }
   - { name: firefox }
   - { name: google-play-music-desktop-player }
   - { name: appcleaner }
