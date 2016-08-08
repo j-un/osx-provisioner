@@ -34,6 +34,8 @@ homebrew_packages:
   - { name: redpen }
   - { name: elixir }
   - { name: go }
+  - { name: terraform }
+  - { name: docker-machine }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -49,7 +51,6 @@ homebrew_cask_packages:
   - { name: onyx }
   - { name: shiftit }
   - { name: phpstorm }
-  - { name: terraform }
   - { name: pomotodo }
   - { name: visual-studio-code }
   - { name: apache-directory-studio }
@@ -60,3 +61,5 @@ homebrew_cask_packages:
   - { name: appcleaner }
   - { name: soundnode }
   - { name: licecap }
+gem_packages:
+  - { name: terraforming }

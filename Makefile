@@ -4,8 +4,8 @@ all:
 test:
 	ansible-playbook osx.yml -i "localhost," -K -C -D -v
 
-brew:
-	ansible-playbook osx.yml -i "localhost," --tags=brew
+packages:
+	ansible-playbook osx.yml -i "localhost," --tags=packages
 
 fonts:
 	ansible-playbook osx.yml -i "localhost," --tags=fonts -K

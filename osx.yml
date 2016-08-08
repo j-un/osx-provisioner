@@ -6,7 +6,7 @@
     HOMEBREW_CASK_OPTS: "--appdir=/Applications --caskroom=/opt/homebrew-cask/Caskroom"
 
   roles:
-    - { role: brew, tags: brew }
+    - { role: packages, tags: packages }
     - { role: fonts, tags: fonts }
     - { role: zsh, tags: zsh }
     - { role: dotfiles, tags: dotfiles }
