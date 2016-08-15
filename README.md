@@ -29,9 +29,9 @@ $ make
 $ make test
 ```
 
-* Only "brew install/update"
+* Only packages install/update
 ```
-$ make brew
+$ make packages
 ```
 
 * etc...
