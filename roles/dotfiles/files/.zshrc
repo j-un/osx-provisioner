@@ -31,7 +31,7 @@ alias vau="vagrant up"
 alias vas="vagrant ssh"
 alias vah="vagrant halt"
 
-alias m="cd ~/.macbook-provisioning; make"
+alias m='(){ (cd ~/.macbook-provisioning; make $1) }'
 
 # for tmux window name
 function ssh() {
