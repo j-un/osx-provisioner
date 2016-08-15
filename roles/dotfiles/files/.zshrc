@@ -31,6 +31,8 @@ alias vau="vagrant up"
 alias vas="vagrant ssh"
 alias vah="vagrant halt"
 
+alias m="cd ~/.macbook-provisioning; make"
+
 # for tmux window name
 function ssh() {
     local window_name=$(tmux display -p '#{window_name}')
