@@ -36,6 +36,7 @@ homebrew_packages:
   - { name: go }
   - { name: terraform }
   - { name: docker-machine }
+  - { name: packer }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
