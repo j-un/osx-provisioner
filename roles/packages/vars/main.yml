@@ -62,5 +62,6 @@ homebrew_cask_packages:
   - { name: appcleaner }
   - { name: soundnode }
   - { name: licecap }
+  - { name: macdown }
 gem_packages:
   - { name: terraforming }
