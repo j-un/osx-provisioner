@@ -63,5 +63,6 @@ homebrew_cask_packages:
   - { name: soundnode }
   - { name: licecap }
   - { name: macdown }
+  - { name: cyberduck }
 gem_packages:
   - { name: terraforming }
