@@ -45,6 +45,6 @@
   with_items: "{{ gem_packages }}"
 
 # pip
-- name: Install/Upgrade pip packages
-  pip: name={{ item.name }} state={{ item.state|default('latest') }}
-  with_items: "{{ pip_packages }}"
+#- name: Install/Upgrade pip packages
+#  pip: name={{ item.name }} state={{ item.state|default('latest') }}
+#  with_items: "{{ pip_packages }}"

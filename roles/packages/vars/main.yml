@@ -65,7 +65,4 @@ homebrew_cask_packages:
   - { name: cyberduck }
 gem_packages:
   - { name: terraforming }
-pip_packages:
-  - { name: fabric }
-  - { name: setuptools }
-  - { name: cryptography }
+#pip_packages:
