@@ -26,6 +26,7 @@ fi
 # alias
 alias ctags="`brew --prefix`/bin/ctags"
 alias ls="ls --color"
+alias v="view"
 
 alias vau="vagrant up"
 alias vas="vagrant ssh"
@@ -36,7 +37,7 @@ alias m='(){ (cd ~/.macbook-provisioning; make $1) }'
 # for tmux window name
 function ssh() {
     local window_name=$(tmux display -p '#{window_name}')
-    command ssh $@
+    command env TERM=xterm ssh $@
     tmux rename-window $window_name
 }
 
