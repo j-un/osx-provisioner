@@ -63,6 +63,7 @@ homebrew_cask_packages:
   - { name: licecap }
   - { name: macdown }
   - { name: cyberduck }
+  - { name: spotify }
 gem_packages:
   - { name: terraforming }
 #pip_packages:
