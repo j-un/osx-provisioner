@@ -66,4 +66,6 @@ homebrew_cask_packages:
   - { name: spotify }
 gem_packages:
   - { name: terraforming }
+npm_packages:
+  - { name: serverless }
 #pip_packages:
