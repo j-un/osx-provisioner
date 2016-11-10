@@ -64,6 +64,7 @@ homebrew_cask_packages:
   - { name: macdown }
   - { name: cyberduck }
   - { name: spotify }
+  - { name: keka }
 gem_packages:
   - { name: terraforming }
 npm_packages:
