@@ -45,7 +45,6 @@ homebrew_cask_packages:
   - { name: atom }
   - { name: vagrant }
   - { name: virtualbox }
-  - { name: karabiner }
   - { name: the-unarchiver }
   - { name: alfred }
   - { name: onyx }
