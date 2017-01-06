@@ -65,6 +65,8 @@ homebrew_cask_packages:
   - { name: spotify }
   - { name: keka }
   - { name: franz }
+  - { name: vmware-fusion }
+  - { name: cmd-eikana }
 gem_packages:
   - { name: terraforming }
 npm_packages:
