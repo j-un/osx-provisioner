@@ -1,7 +1,7 @@
 # osx-provisioner
 
 ## What's this
-* OSX provisioner just for me.
+* macOS provisioner just for me.
 
 ## Prerequisite Tasks
 1. Install Homebrew and Ansible.
