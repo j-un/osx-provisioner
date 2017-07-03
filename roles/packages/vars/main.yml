@@ -31,7 +31,6 @@ homebrew_packages:
   - { name: zsh }
   - { name: graphviz }
   - { name: awscli }
-  - { name: redpen }
   - { name: elixir }
   - { name: go }
   - { name: terraform }
@@ -39,7 +38,6 @@ homebrew_packages:
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
-  - { name: adobe-reader }
   - { name: slack }
   - { name: gitx }
   - { name: atom }
@@ -52,7 +50,6 @@ homebrew_cask_packages:
   - { name: phpstorm }
   - { name: pomotodo }
   - { name: visual-studio-code }
-  - { name: apache-directory-studio }
   - { name: java }
   - { name: docker }
   - { name: firefox }
@@ -64,9 +61,8 @@ homebrew_cask_packages:
   - { name: cyberduck }
   - { name: spotify }
   - { name: keka }
-  - { name: franz }
-  - { name: vmware-fusion }
   - { name: cmd-eikana }
+  - { name: chatwork }
 gem_packages:
   - { name: terraforming }
 npm_packages:
