@@ -47,7 +47,7 @@ homebrew_cask_packages:
   - { name: alfred }
   - { name: onyx }
   - { name: shiftit }
-  - { name: phpstorm }
+#  - { name: phpstorm }
   - { name: pomotodo }
   - { name: visual-studio-code }
   - { name: java }
