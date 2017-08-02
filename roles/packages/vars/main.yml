@@ -36,6 +36,7 @@ homebrew_packages:
   - { name: terraform }
   - { name: packer }
   - { name: mysql }
+  - { name: ctop }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
