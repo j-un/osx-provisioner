@@ -59,6 +59,7 @@ homebrew_cask_packages:
   - { name: keka }
   - { name: cmd-eikana }
   - { name: chatwork }
+  - { name: kindle }
 gem_packages:
   - { name: terraforming }
 npm_packages:
