@@ -3,7 +3,7 @@
   connection: local
   gather_facts: no
   environment:
-    HOMEBREW_CASK_OPTS: "--appdir=/Applications --caskroom=/opt/homebrew-cask/Caskroom"
+    HOMEBREW_CASK_OPTS: "--appdir=/Applications"
 
   roles:
     - { role: packages, tags: packages }
