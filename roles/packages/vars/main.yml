@@ -62,6 +62,7 @@ homebrew_cask_packages:
   - { name: kindle }
   - { name: vivaldi }
   - { name: boostnote }
+  - { name: google-backup-and-sync }
 gem_packages:
   - { name: terraforming }
 npm_packages:
