@@ -61,8 +61,10 @@ homebrew_cask_packages:
   - { name: chatwork }
   - { name: kindle }
   - { name: vivaldi }
+  - { name: boostnote }
 gem_packages:
   - { name: terraforming }
 npm_packages:
   - { name: serverless }
+  - { name: gtop }
 #pip_packages:
