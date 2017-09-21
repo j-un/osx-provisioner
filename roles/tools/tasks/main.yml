@@ -1,0 +1,7 @@
+---
+- name: Create a ~/bin directory (if it doesn't exist)
+  file: path=~/bin state=directory mode=0755
+
+- name: Copy tools to bin dir
+  copy: src={{ item }} dest=~/bin/{{ item }} mode=0755 force=yes backup=yes
+  with_items: "{{ tools_name }}"

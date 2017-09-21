@@ -11,3 +11,4 @@
     - { role: zsh, tags: zsh }
     - { role: dotfiles, tags: dotfiles }
     - { role: vim, tags: vim }
+    - { role: tools, tags: tools }
