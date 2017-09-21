@@ -58,14 +58,14 @@ homebrew_cask_packages:
   - { name: spotify }
   - { name: keka }
   - { name: cmd-eikana }
-  - { name: chatwork }
   - { name: kindle }
   - { name: vivaldi }
   - { name: boostnote }
   - { name: google-backup-and-sync }
+  - { name: dash }
+  - { name: spotmenu }
 gem_packages:
   - { name: terraforming }
 npm_packages:
-  - { name: serverless }
   - { name: gtop }
 #pip_packages:
