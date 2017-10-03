@@ -4,6 +4,7 @@
   with_items:
     - sanemat/font
     - caskroom/cask
+    - caskroom/fonts
 
 - name: Install xquartz (for Ricty)
   homebrew_cask: name=xquartz
@@ -13,6 +14,9 @@
 
 - name: Install Ricty
   homebrew: name=ricty options=powerline,vim-powerline
+
+- name: Install Hack
+  homebrew_cask: name=font-hack
 
 - name: Copy font file
   shell: cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
