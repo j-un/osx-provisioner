@@ -17,6 +17,7 @@ export PATH=/usr/local/opt/coreutils/libexec/gnubin:${HOME}/.gem/ruby/2.3.0:${PA
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 export LESS=" -R "
+export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
 
 if [ -e "$HOME/go" ]; then
   export GOPATH="$HOME/go"
