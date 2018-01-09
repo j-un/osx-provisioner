@@ -31,7 +31,7 @@ homebrew_packages:
   - { name: zsh }
   - { name: awscli }
   - { name: go }
-  - { name: terraform }
+#  - { name: terraform }
   - { name: packer }
   - { name: mysql }
   - { name: ctop }
