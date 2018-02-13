@@ -37,6 +37,7 @@ NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'hynek/vim-python-pep8-indent'
+NeoBundle 'plasticboy/vim-markdown'
 
 call neobundle#end()
 
@@ -109,8 +110,12 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Exit_OnlyWindow = 1
 map <silent> <leader>l :TlistToggle<CR>
 
+"" plasticboy/vim-markdown
+let g:vim_markdown_folding_disabled = 1
+
 "" Common
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set nu
+set clipboard+=unnamed
