@@ -38,6 +38,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'hynek/vim-python-pep8-indent'
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'hashivim/vim-terraform'
 
 call neobundle#end()
 
@@ -112,6 +113,12 @@ map <silent> <leader>l :TlistToggle<CR>
 
 "" plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled = 1
+
+"" hashivim/vim-terraform
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+let g:terraform_remap_spacebar=1
+let g:terraform_fmt_on_save=1
 
 "" Common
 set tabstop=4
