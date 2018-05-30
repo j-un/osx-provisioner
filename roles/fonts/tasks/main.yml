@@ -3,8 +3,6 @@
   homebrew_tap: tap={{ item }} state=present
   with_items:
     - sanemat/font
-    - caskroom/cask
-    - caskroom/fonts
 
 - name: Install xquartz (for Ricty)
   homebrew_cask: name=xquartz

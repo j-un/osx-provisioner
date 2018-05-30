@@ -2,7 +2,6 @@ homebrew_taps:
   - homebrew/binary
   - homebrew/dupes
   - homebrew/php
-  - caskroom/cask
 homebrew_packages:
   - { name: python }
   - { name: ansible }
@@ -66,6 +65,7 @@ homebrew_cask_packages:
   - { name: google-backup-and-sync }
   - { name: dash }
   - { name: spotmenu }
+  - { name: mysqlworkbench }
 gem_packages:
   - { name: terraforming }
 npm_packages:
