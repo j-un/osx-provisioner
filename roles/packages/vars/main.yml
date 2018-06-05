@@ -68,6 +68,7 @@ homebrew_cask_packages:
   - { name: mysqlworkbench }
 gem_packages:
   - { name: terraforming }
+  - { name: iStats }
 npm_packages:
   - { name: gtop }
 #pip_packages:
