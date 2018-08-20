@@ -71,4 +71,5 @@ gem_packages:
   - { name: iStats }
 npm_packages:
   - { name: gtop }
+  - { name: vue-cli }
 #pip_packages:
