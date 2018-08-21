@@ -69,6 +69,8 @@ homebrew_cask_packages:
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
+  - { name: bundler }
+  - { name: sass }
 npm_packages:
   - { name: gtop }
   - { name: vue-cli }
