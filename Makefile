@@ -19,3 +19,5 @@ dot:
 vim:
 	ansible-playbook osx.yml -i "localhost," --tags=vim
 
+tools:
+	ansible-playbook osx.yml -i "localhost," --tags=tools
