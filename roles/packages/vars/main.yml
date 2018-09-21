@@ -64,6 +64,7 @@ homebrew_cask_packages:
   - { name: dash }
   - { name: spotmenu }
   - { name: mysqlworkbench }
+  - { name: visual-studio-code }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
