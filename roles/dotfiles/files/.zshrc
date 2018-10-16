@@ -29,6 +29,7 @@ alias ctags="`brew --prefix`/bin/ctags"
 alias ls="ls --color"
 alias v="view"
 alias vi="vim"
+alias gfc="git fetch && git checkout"
 
 alias vau="vagrant up"
 alias vas="vagrant ssh"
