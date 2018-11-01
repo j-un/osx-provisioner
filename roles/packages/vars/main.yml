@@ -35,7 +35,6 @@ homebrew_packages:
   - { name: mysql }
   - { name: ctop }
   - { name: awslogs }
-  - { name: rust }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
