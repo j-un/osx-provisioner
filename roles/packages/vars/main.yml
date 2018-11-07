@@ -72,4 +72,5 @@ gem_packages:
 npm_packages:
   - { name: gtop }
   - { name: vue-cli }
-#pip_packages:
+pip_packages:
+  - { name: cfn-lint }
