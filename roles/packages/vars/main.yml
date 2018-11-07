@@ -49,9 +49,7 @@ homebrew_cask_packages:
   - { name: java }
   - { name: docker }
   - { name: firefox }
-  - { name: marshallofsound-google-play-music-player }
   - { name: appcleaner }
-  - { name: soundnode }
   - { name: licecap }
   - { name: cyberduck }
   - { name: spotify }
