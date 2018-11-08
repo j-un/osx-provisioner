@@ -57,7 +57,6 @@ homebrew_cask_packages:
   - { name: cmd-eikana }
   - { name: kindle }
   - { name: boostnote }
-  - { name: google-backup-and-sync }
   - { name: dash }
   - { name: spotmenu }
   - { name: mysqlworkbench }
