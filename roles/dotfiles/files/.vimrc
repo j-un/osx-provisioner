@@ -39,6 +39,8 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'hynek/vim-python-pep8-indent'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'hashivim/vim-terraform'
+NeoBundle 'w0rp/ale'
+NeoBundle 'airblade/vim-gitgutter'
 
 call neobundle#end()
 
