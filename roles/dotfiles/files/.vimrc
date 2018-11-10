@@ -125,7 +125,9 @@ let g:terraform_fmt_on_save=1
 "" Common
 set tabstop=4
 set shiftwidth=4
-set expandtab
 set nu
 set clipboard+=unnamed
 set cursorline
+
+"" Settings per filetype
+autocmd FileType yaml setlocal softtabstop=2 tabstop=2 shiftwidth=2 expandtab smartindent
