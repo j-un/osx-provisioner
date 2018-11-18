@@ -1,8 +1,4 @@
 ---
-- name: Tap external Homebrew repositories
-  homebrew_tap: tap={{ item }} state=present
-  with_items: "{{ homebrew_taps }}"
-
 - name: Update Homebrew
   homebrew: update_homebrew=yes
 
@@ -56,6 +52,7 @@
   with_items: "{{ npm_packages }}"
   when: node_is_installed != ""
 
+  # Please exec 'easy_install pip', if you met an error...
 - name: Install/Upgrade pip packages
   pip: name={{ item.name }} state={{ item.state|default('latest') }}
   with_items: "{{ pip_packages }}"
