@@ -41,6 +41,7 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'hashivim/vim-terraform'
 NeoBundle 'w0rp/ale'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'Yggdroot/indentLine'
 
 call neobundle#end()
 
