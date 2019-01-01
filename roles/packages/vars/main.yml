@@ -65,5 +65,6 @@ gem_packages:
   - { name: sass }
 npm_packages:
   - { name: gtop }
+  - { name: serverless }
 pip_packages:
   - { name: cfn-lint }
