@@ -57,6 +57,8 @@ homebrew_cask_packages:
   - { name: spotmenu }
   - { name: mysqlworkbench }
   - { name: visual-studio-code }
+  - { name: edex-ui }
+  - { name: keyboardcleantool }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
