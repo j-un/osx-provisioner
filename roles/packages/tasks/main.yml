@@ -19,7 +19,8 @@
   file: path=brew_info state=directory
 
 - name: Log Brew Info
-  shell: brew info {{ item }} > brew_info/{{ item }}
+  shell: |
+    brew info {{ item | basename }} > brew_info/{{ item | basename }}
   with_items: "{{ brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
 
 # cask
