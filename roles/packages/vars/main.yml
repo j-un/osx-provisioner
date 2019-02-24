@@ -33,6 +33,7 @@ homebrew_packages:
   - { name: awslogs }
   - { name: yarn }
   - { name: knqyf263/utern/utern }
+  - { name: hugo }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
