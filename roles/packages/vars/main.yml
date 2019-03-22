@@ -63,6 +63,7 @@ homebrew_cask_packages:
   - { name: edex-ui }
   - { name: keyboardcleantool }
   - { name: postman }
+  - { name: aws-vault }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
