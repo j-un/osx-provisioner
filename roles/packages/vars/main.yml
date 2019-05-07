@@ -45,7 +45,6 @@ homebrew_cask_packages:
   - { name: onyx }
   - { name: shiftit }
   - { name: pomotodo }
-  - { name: java }
   - { name: docker }
   - { name: firefox }
   - { name: appcleaner }
