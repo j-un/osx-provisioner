@@ -14,7 +14,7 @@
   homebrew: name=ricty options=powerline,vim-powerline
 
 - name: Install Hack
-  homebrew_cask: name=font-hack
+  homebrew_cask: name=homebrew/cask-fonts/font-hack install_options=force
 
 - name: Copy font file
   shell: cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
