@@ -63,6 +63,7 @@ homebrew_cask_packages:
   - { name: keyboardcleantool }
   - { name: postman }
   - { name: aws-vault }
+  - { name: bitwarden }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
