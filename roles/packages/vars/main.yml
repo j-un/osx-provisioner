@@ -64,6 +64,7 @@ homebrew_cask_packages:
   - { name: postman }
   - { name: aws-vault }
   - { name: bitwarden }
+  - { name: google-cloud-sdk }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
