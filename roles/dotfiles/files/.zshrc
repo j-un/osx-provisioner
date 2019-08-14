@@ -19,7 +19,6 @@ export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 export LESS=" -R "
 ## LS_COLORS and tab completion color are set here (I couldn't setup this in prezto...)
 export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 if [ -e "$HOME/go" ]; then
   export GOPATH="$HOME/go"
@@ -55,5 +54,8 @@ function ssh() {
 #    fi
 #fi
 
+# zsh
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+RPROMPT="%U%F{green}%D %*%f%u"
