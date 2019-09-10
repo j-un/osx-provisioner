@@ -66,6 +66,7 @@ homebrew_cask_packages:
   - { name: bitwarden }
   - { name: google-cloud-sdk }
   - { name: toggl }
+  - { name: hyper }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
