@@ -6,7 +6,7 @@
 ## Prerequisite Tasks
 1. Install Homebrew and Ansible.
 ```
-$ sudo xcodebuild -license
+$ sudo xcode-select --install
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew update
 $ brew install python ansible
