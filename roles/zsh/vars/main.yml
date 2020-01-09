@@ -1,2 +1,4 @@
 ---
 login_shell_path: "{{ lookup('env','SHELL') }}"
+promptfiles:
+  - prompt_kylewest_mod_setup

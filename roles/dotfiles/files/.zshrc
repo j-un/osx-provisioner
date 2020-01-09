@@ -58,4 +58,3 @@ function ssh() {
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-RPROMPT="%U%F{green}%D %*%f%u"
