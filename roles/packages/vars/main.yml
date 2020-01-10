@@ -34,6 +34,7 @@ homebrew_packages:
   - { name: yarn }
   - { name: knqyf263/utern/utern }
   - { name: hugo }
+  - { name: amazon-ecs-cli }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -65,6 +66,7 @@ homebrew_cask_packages:
   - { name: google-cloud-sdk }
   - { name: toggl }
   - { name: hyper }
+  - { name: java }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
