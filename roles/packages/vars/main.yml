@@ -67,6 +67,7 @@ homebrew_cask_packages:
   - { name: toggl }
   - { name: hyper }
   - { name: java }
+  - { name: vagrant }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
