@@ -35,6 +35,7 @@ homebrew_packages:
   - { name: knqyf263/utern/utern }
   - { name: hugo }
   - { name: amazon-ecs-cli }
+  - { name: mkcert }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
