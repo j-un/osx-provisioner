@@ -36,6 +36,7 @@ homebrew_packages:
   - { name: hugo }
   - { name: amazon-ecs-cli }
   - { name: mkcert }
+  - { name: nss }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
