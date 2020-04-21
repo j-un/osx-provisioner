@@ -1,4 +1,5 @@
 all:
+	brew upgrade ansible
 	ansible-playbook osx.yml -i "localhost," -K
 
 test:
