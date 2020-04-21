@@ -27,6 +27,7 @@ homebrew_packages:
   - { name: go }
 #  - { name: terraform }
   - { name: tfenv }
+  - { name: tflint }
   - { name: packer }
   - { name: mysql }
   - { name: ctop }
