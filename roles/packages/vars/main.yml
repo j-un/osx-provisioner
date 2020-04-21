@@ -1,6 +1,5 @@
 homebrew_packages:
   - { name: python }
-  - { name: ansible }
   - { name: coreutils }
   - { name: ctags }
   - { name: git }
@@ -27,6 +26,7 @@ homebrew_packages:
   - { name: awscli }
   - { name: go }
 #  - { name: terraform }
+  - { name: tfenv }
   - { name: packer }
   - { name: mysql }
   - { name: ctop }
