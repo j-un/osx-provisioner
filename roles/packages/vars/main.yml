@@ -25,6 +25,7 @@ homebrew_packages:
   - { name: zsh }
   - { name: awscli }
   - { name: go }
+  - { name: anyenv }
 #  - { name: terraform }
   - { name: tfenv }
   - { name: tflint }

@@ -63,7 +63,6 @@ function prompt_kylewest_mod_setup {
 
   # Define prompts.
   PROMPT_TOP='%F{243}-> ${LASTCMD_END_TIME}%f'$'\n'
-  #PROMPT_MIDDLE='%F{243}%D %*%f %F{cyan}%c%f ${git_info:+${(e)git_info[prompt]}}${editor_info[keymap]} '
   PROMPT_MIDDLE='%F{243}%D{%Y-%m-%d %H:%M:%S}%f %F{cyan}%c%f ${git_info:+${(e)git_info[prompt]}}${editor_info[keymap]} '
   PROMPT="${PROMPT_TOP}${PROMPT_MIDDLE}"
   RPROMPT='${ruby_info[version]}'
