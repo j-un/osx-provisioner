@@ -1,7 +1,5 @@
 homebrew_packages:
-  - { name: python }
   - { name: coreutils }
-  - { name: ctags }
   - { name: git }
   - { name: wget }
   - { name: curl }
@@ -9,8 +7,6 @@ homebrew_packages:
   - { name: nkf }
   - { name: jq }
   - { name: peco }
-  - { name: php-code-sniffer }
-  - { name: hub }
   - { name: node }
   - { name: tig }
   - { name: rbenv }
@@ -26,25 +22,13 @@ homebrew_packages:
   - { name: awscli }
   - { name: go }
   - { name: anyenv }
-#  - { name: terraform }
   - { name: tfenv }
   - { name: tflint }
-  - { name: packer }
-  - { name: mysql }
-  - { name: ctop }
-  - { name: awslogs }
   - { name: yarn }
   - { name: knqyf263/utern/utern }
-  - { name: hugo }
-  - { name: amazon-ecs-cli }
-  - { name: mkcert }
-  - { name: nss }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
-  - { name: slack }
-  - { name: vagrant }
-  - { name: virtualbox }
   - { name: the-unarchiver }
   - { name: alfred }
   - { name: onyx }
@@ -52,7 +36,6 @@ homebrew_cask_packages:
   - { name: docker }
   - { name: firefox }
   - { name: appcleaner }
-  - { name: cyberduck }
   - { name: spotify }
   - { name: keka }
   - { name: cmd-eikana }
@@ -60,14 +43,28 @@ homebrew_cask_packages:
   - { name: spotmenu }
   - { name: visual-studio-code }
   - { name: keyboardcleantool }
-  - { name: postman }
   - { name: aws-vault }
   - { name: bitwarden }
   - { name: google-cloud-sdk }
-  - { name: toggl }
-  - { name: java }
+homebrew_packages_work:
+  - { name: ctags }
+  - { name: php-code-sniffer }
+  - { name: hub }
+  - { name: mysql }
+  - { name: ctop }
+  - { name: amazon-ecs-cli }
+  - { name: mkcert }
+  - { name: nss }
+homebrew_cask_packages_work:
+  - { name: slack }
   - { name: vagrant }
+  - { name: postman }
+  - { name: toggl-track }
   - { name: drawio }
+homebrew_packages_home:
+  - { name: hugo }
+homebrew_cask_packages_home:
+  - { name: vlc }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }

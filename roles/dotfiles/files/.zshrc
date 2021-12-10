@@ -5,6 +5,9 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(pyenv init -)"
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -13,8 +16,8 @@ fi
 # env
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="vim"
-export PATH=/usr/local/opt/python/libexec/bin:/usr/local/opt/coreutils/libexec/gnubin:${HOME}/.gem/ruby/2.3.0:${PATH}
-export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
+export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:${HOME}/.gem/ruby/2.3.0:${PATH}
+export MANPATH=$(brew --prefix)/opt/coreutils/libexec/gnuman:${MANPATH}
 export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 export LESS=" -R "
 ## LS_COLORS and tab completion color are set here (I couldn't setup this in prezto...)
