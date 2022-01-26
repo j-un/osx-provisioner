@@ -24,3 +24,6 @@ vim:
 
 tools:
 	ansible-playbook osx.yml -i "localhost," --tags=tools --extra-vars $(extra-vars)
+
+defaults:
+	ansible-playbook osx.yml -i "localhost," --tags=defaults --extra-vars $(extra-vars)
