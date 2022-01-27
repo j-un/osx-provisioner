@@ -26,6 +26,7 @@ homebrew_packages:
   - { name: tflint }
   - { name: yarn }
   - { name: knqyf263/utern/utern }
+  - { name: act }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -53,6 +54,7 @@ homebrew_packages_work:
   - { name: mysql }
   - { name: ctop }
   - { name: amazon-ecs-cli }
+  - { name: aws/tap/aws-sam-cli }
   - { name: mkcert }
   - { name: nss }
 homebrew_cask_packages_work:
