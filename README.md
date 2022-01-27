@@ -3,13 +3,25 @@
 ## What's this
 * macOS provisioner just for me.
 
-## Prerequisite Tasks
-1. Install Homebrew and Ansible.
+## Prerequisite
+1. XCode
 ```
 $ xcode-select --install
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew update
-$ brew install python ansible
+```
+
+1. Homebrew
+```
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+1. python
+* https://github.com/pyenv/pyenv#installation
+* `$ pyenv install x.x.x`
+* `$ pyenv global x.x.x`
+
+1. ansible
+```
+$ brew install ansible
 ```
 
 ## Install
@@ -40,4 +52,5 @@ $ make dot
 $ make fonts
 $ make zsh
 $ make vim
+$ make tools
 ```

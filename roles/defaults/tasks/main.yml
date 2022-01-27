@@ -1,0 +1,95 @@
+---
+# スマート引用符無効
+- name: "NSAutomaticDashSubstitutionEnabled -> false"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: "NSAutomaticQuoteSubstitutionEnabled -> false"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticQuoteSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
+# Dockを自動的に非表示
+- name: "com.apple.dock autohide -> true"
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
+    state: present
+  notify: "Restart Dock"
+
+# 最近使ったアプリケーションをDockに表示しない
+- name: "com.apple.dock show-recents -> false"
+  osx_defaults:
+    domain: com.apple.dock
+    key: show-recents
+    type: bool
+    value: false
+    state: present
+  notify: "Restart Dock"
+
+# Dockのアイコンサイズ
+- name: "com.apple.dock tilesize -> 46"
+  osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: float
+    value: 46
+    state: present
+  notify: "Restart Dock"
+
+# Finderでパスバー表示
+- name: "com.apple.finder ShowPathbar -> true"
+  osx_defaults:
+    domain: com.apple.finder
+    key: ShowPathbar
+    type: bool
+    value: true
+    state: present
+  notify: "Restart Finder"
+
+# メニューバーに音量を配置(TODO: defaultsで見ると反映されてるけどシステム環境設定に反映されない)
+- name: "com.apple.controlcenter NSStatusItem Visible Sound -> true"
+  osx_defaults:
+    domain: com.apple.controlcenter
+    key: "NSStatusItem Visible Sound"
+    type: bool
+    value: true
+    state: present
+
+# ライブ変換無効
+- name: "com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -> false"
+  osx_defaults:
+    domain: com.apple.inputmethod.Kotoeri
+    key: JIMPrefLiveConversionKey
+    type: bool
+    value: false
+    state: present
+
+# スクリーンセーバ開始までの時間
+- name: "com.apple.screensaver idleTime -> 600"
+  osx_defaults:
+    domain: com.apple.screensaver
+    host: currentHost
+    key: idleTime
+    type: int
+    value: 600
+    state: present
+
+# スクリーンセーバに時計を表示
+- name: "com.apple.screensaver showClock -> true"
+  osx_defaults:
+    domain: com.apple.screensaver
+    host: currentHost
+    key: showClock
+    type: bool
+    value: true
+    state: present

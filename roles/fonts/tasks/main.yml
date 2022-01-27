@@ -2,22 +2,7 @@
 - name: Tap external Homebrew repositories
   homebrew_tap: tap={{ item }} state=present
   with_items:
-    - sanemat/font
+    - homebrew/cask-fonts
 
-- name: Install xquartz (for Ricty)
-  homebrew_cask: name=xquartz
-
-- name: Install fontforge (for Ricty)
-  homebrew: name=fontforge
-
-- name: Install Ricty
-  homebrew: name=ricty options=powerline,vim-powerline
-
-- name: Install Hack
-  homebrew_cask: name=homebrew/cask-fonts/font-hack install_options=force
-
-- name: Copy font file
-  shell: cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/
-  args:
-    creates: ~/Library/Fonts/Ricty-Bold.ttf
-  notify: run fc-cache
+- name: Install HackGen
+  homebrew_cask: name=font-hackgen

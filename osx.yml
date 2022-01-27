@@ -4,8 +4,6 @@
   gather_facts: no
   environment:
     HOMEBREW_CASK_OPTS: "--appdir=/Applications"
-  vars:
-    ansible_python_interpreter: "/usr/local/opt/python/libexec/bin/python"
 
   roles:
     - { role: packages, tags: packages }
@@ -14,3 +12,4 @@
     - { role: dotfiles, tags: dotfiles }
     - { role: vim, tags: vim }
     - { role: tools, tags: tools }
+    - { role: defaults, tags: defaults }

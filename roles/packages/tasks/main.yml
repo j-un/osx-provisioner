@@ -3,7 +3,7 @@
   homebrew: update_homebrew=yes
 
 # brew
-- name: Install/Upgrade Homebrew packages
+- name: Install/Upgrade Homebrew packages for all env
   homebrew: >
     name={{ item.name }}
     state={{ item.state | default('latest') }}
@@ -15,26 +15,55 @@
   with_items: "{{ homebrew_packages }}"
   register: brew_result
 
-- name: Make directory for Brew Info
-  file: path=brew_info state=directory
+- name: Install/Upgrade Homebrew packages for work
+  homebrew: >
+    name={{ item.name }}
+    state={{ item.state | default('latest') }}
+    install_options={{
+      item.install_options | default() | join(',')
+      if item.install_options is not string
+      else item.install_options
+    }}
+  with_items: "{{ homebrew_packages_work }}"
+  register: brew_result
+  when: env == "work"
 
-- name: Log Brew Info
-  shell: |
-    brew info {{ item | basename }} > brew_info/{{ item | basename }}
-  with_items: "{{ brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
+- name: Install/Upgrade Homebrew packages for home
+  homebrew: >
+    name={{ item.name }}
+    state={{ item.state | default('latest') }}
+    install_options={{
+      item.install_options | default() | join(',')
+      if item.install_options is not string
+      else item.install_options
+    }}
+  with_items: "{{ homebrew_packages_home }}"
+  register: brew_result
+  when: env == "home"
 
 # cask
-- name: Install/Upgrade Homebrew Cask packages
+- name: Install/Upgrade Homebrew Cask packages for all env
   homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }} install_options=force
   with_items: "{{ homebrew_cask_packages }}"
   register: cask_result
+  ignore_errors: True
+  changed_when: False
 
-- name: Make directory for Brew Cask Info
-  file: path=cask_info state=directory
+- name: Install/Upgrade Homebrew Cask packages for work
+  homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }} install_options=force
+  with_items: "{{ homebrew_cask_packages_work }}"
+  register: cask_result
+  ignore_errors: True
+  changed_when: False
+  when: env == "work"
 
-- name: Log Brew Cask Info
-  shell: brew cask info {{ item }} > cask_info/{{ item }}
-  with_items: "{{ cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
+- name: Install/Upgrade Homebrew Cask packages for home
+  homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }} install_options=force
+  with_items: "{{ homebrew_cask_packages_home }}"
+  register: cask_result
+  ignore_errors: True
+  changed_when: False
+  when: env == "home"
 
 # gem
 - name: Install/Upgrade gem packages
@@ -43,7 +72,7 @@
 
 # npm
 - name: Check brew list node
-  shell: brew list | grep node
+  shell: brew list --formula | grep node
   register: node_is_installed
   ignore_errors: True
   changed_when: False
@@ -52,16 +81,8 @@
   npm: name={{ item.name }} state={{ item.state|default('latest') }} global={{ item.global|default('yes') }}
   with_items: "{{ npm_packages }}"
   when: node_is_installed != ""
-
-- name: Checking whether pip command is installed
-  shell: type pip
-  register: result
   ignore_errors: True
   changed_when: False
-
-- name: Install pip command
-  shell: easy_install pip
-  when: result is failed
 
 - name: Install/Upgrade pip packages
   pip: name={{ item.name }} state={{ item.state|default('latest') }}
