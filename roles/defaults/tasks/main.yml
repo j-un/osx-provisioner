@@ -93,3 +93,14 @@
     type: bool
     value: true
     state: present
+
+# VSCodeのvimキーバインドでキーリピートを有効にする
+# https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+- name: "com.microsoft.VSCode ApplePressAndHoldEnabled -> false"
+  osx_defaults:
+    domain: com.microsoft.VSCode
+    host: currentHost
+    key: ApplePressAndHoldEnabled
+    type: bool
+    value: false
+    state: present
