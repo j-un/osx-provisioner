@@ -1,7 +1,6 @@
-extra-vars := "env=work ansible_python_interpreter=$(shell pyenv prefix)/bin/python"
+extra-vars := "env=home ansible_python_interpreter=$(shell pyenv prefix)/bin/python"
 
 all:
-	brew upgrade ansible
 	ansible-playbook osx.yml -i "localhost," -K --extra-vars $(extra-vars)
 
 test:
@@ -27,3 +26,6 @@ tools:
 
 defaults:
 	ansible-playbook osx.yml -i "localhost," --tags=defaults --extra-vars $(extra-vars)
+
+git:
+	ansible-playbook osx.yml -i "localhost," --tags=git --extra-vars $(extra-vars)
