@@ -1,0 +1,4 @@
+gitconfigs:
+  - { name: user.name, scope: global, value: 'Jun TANAKA' }
+  - { name: user.email, scope: global, value: 'tanaka.jn@gmail.com' }
+  - { name: core.editor, scope: global, value: 'vim -c "set fenc=utf-8"' }

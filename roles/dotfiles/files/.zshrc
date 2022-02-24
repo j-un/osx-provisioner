@@ -17,7 +17,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="vim"
 export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:${HOME}/.gem/ruby/2.3.0:${PATH}
 export MANPATH=$(brew --prefix)/opt/coreutils/libexec/gnuman:${MANPATH}
-export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+export LESSOPEN="| src-hilite-lesspipe.sh %s"
 export LESS=" -R "
 ## LS_COLORS and tab completion color are set here (I couldn't setup this in prezto...)
 export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'

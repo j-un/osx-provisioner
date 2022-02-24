@@ -32,7 +32,6 @@ homebrew_cask_packages:
   - { name: google-chrome }
   - { name: the-unarchiver }
   - { name: alfred }
-  - { name: onyx }
   - { name: shiftit }
   - { name: docker }
   - { name: firefox }
@@ -47,6 +46,7 @@ homebrew_cask_packages:
   - { name: aws-vault }
   - { name: bitwarden }
   - { name: google-cloud-sdk }
+  - { name: notion }
 homebrew_packages_work:
   - { name: ctags }
   - { name: php-code-sniffer }
