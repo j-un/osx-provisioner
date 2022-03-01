@@ -56,13 +56,22 @@
     state: present
   notify: "Restart Finder"
 
-# メニューバーに音量を配置(TODO: defaultsで見ると反映されてるけどシステム環境設定に反映されない)
+# メニューバーに音量を常に配置(以下2つともに必要)
 - name: "com.apple.controlcenter NSStatusItem Visible Sound -> true"
   osx_defaults:
     domain: com.apple.controlcenter
     key: "NSStatusItem Visible Sound"
     type: bool
     value: true
+    state: present
+
+- name: "com.apple.controlcenter Sound -> 18"
+  osx_defaults:
+    domain: com.apple.controlcenter
+    host: currentHost
+    key: Sound
+    type: int
+    value: 18
     state: present
 
 # ライブ変換無効
