@@ -60,3 +60,10 @@ function ssh() {
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+# anyenv
+eval "$(anyenv init -)"
+
+# なぜか後から追加したユーザでタブ補完が有効にならないので暫定的で
+autoload -Uz compinit
+compinit -u
