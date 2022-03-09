@@ -113,3 +113,12 @@
     type: bool
     value: false
     state: present
+
+# インストールしたフォントを全ユーザで使用可能にする（コンピュータにインストールする）
+- name: "com.apple.FontBook FBDefaultInstallDomainRef -> 1"
+  osx_defaults:
+    domain: com.apple.FontBook
+    key: FBDefaultInstallDomainRef
+    type: int
+    value: 1
+    state: present
