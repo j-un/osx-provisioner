@@ -27,6 +27,7 @@ homebrew_packages:
   - { name: yarn }
   - { name: knqyf263/utern/utern }
   - { name: act }
+  - { name: httping }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -57,6 +58,7 @@ homebrew_packages_work:
   - { name: aws/tap/aws-sam-cli }
   - { name: mkcert }
   - { name: nss }
+  - { name: java }
 homebrew_cask_packages_work:
   - { name: slack }
   - { name: vagrant }

@@ -16,6 +16,16 @@
     value: false
     state: present
 
+## TODO: これだけだと反映されない
+# マウスのスクロール速度
+- name: "com.apple.scrollwheel.scaling -> 0.75"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.scrollwheel.scaling
+    type: float
+    value: 0.75
+    state: present
+
 # Dockを自動的に非表示
 - name: "com.apple.dock autohide -> true"
   osx_defaults:

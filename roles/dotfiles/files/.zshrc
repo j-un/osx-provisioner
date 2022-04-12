@@ -15,7 +15,7 @@ fi
 # env
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="vim"
-export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:${HOME}/.gem/ruby/2.3.0:${PATH}
+export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:${HOME}/.gem/ruby/2.3.0:/opt/homebrew/opt/openjdk/bin:${PATH}
 export MANPATH=$(brew --prefix)/opt/coreutils/libexec/gnuman:${MANPATH}
 export LESSOPEN="| src-hilite-lesspipe.sh %s"
 export LESS=" -R "
