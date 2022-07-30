@@ -28,6 +28,7 @@ homebrew_packages:
   - { name: knqyf263/utern/utern }
   - { name: act }
   - { name: httping }
+  - { name: buildpacks/tap/pack }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -48,6 +49,8 @@ homebrew_cask_packages:
   - { name: bitwarden }
   - { name: google-cloud-sdk }
   - { name: notion }
+  - { name: openmtp }
+  - { name: karabiner-elements }
 homebrew_packages_work:
   - { name: ctags }
   - { name: php-code-sniffer }
