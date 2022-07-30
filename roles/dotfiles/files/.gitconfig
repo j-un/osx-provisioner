@@ -1,0 +1,6 @@
+[user]
+	name = Jun TANAKA
+	email = tanaka.jn@gmail.com
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+    excludesfile = ~/.gitignore
