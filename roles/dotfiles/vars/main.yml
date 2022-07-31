@@ -10,3 +10,4 @@ dotfiles_name:
   - .vimrc
   - .ctags
   - .hyper.js
+  - .alacritty.yml
