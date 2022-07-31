@@ -51,6 +51,7 @@ homebrew_cask_packages:
   - { name: notion }
   - { name: openmtp }
   - { name: karabiner-elements }
+  - { name: alacritty }
 homebrew_packages_work:
   - { name: ctags }
   - { name: php-code-sniffer }
