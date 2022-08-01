@@ -11,3 +11,4 @@ dotfiles_name:
   - .ctags
   - .hyper.js
   - .alacritty.yml
+  - .config/karabiner/
