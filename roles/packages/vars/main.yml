@@ -7,10 +7,7 @@ homebrew_packages:
   - { name: nkf }
   - { name: jq }
   - { name: peco }
-  - { name: node }
   - { name: tig }
-  - { name: rbenv }
-  - { name: ruby-build }
   - { name: tofrodos }
   - { name: tmux }
   - { name: reattach-to-user-namespace }
@@ -22,7 +19,6 @@ homebrew_packages:
   - { name: awscli }
   - { name: go }
   - { name: anyenv }
-  - { name: tfenv }
   - { name: tflint }
   - { name: yarn }
   - { name: knqyf263/utern/utern }
@@ -78,8 +74,5 @@ gem_packages:
   - { name: iStats }
   - { name: bundler }
   - { name: sass }
-npm_packages:
-  - { name: gtop }
-  - { name: serverless }
 pip_packages:
   - { name: cfn-lint }
