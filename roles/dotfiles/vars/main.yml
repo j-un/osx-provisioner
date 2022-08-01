@@ -9,6 +9,5 @@ dotfiles_name:
   - .tmux.conf
   - .vimrc
   - .ctags
-  - .hyper.js
   - .alacritty.yml
   - .config/karabiner/
