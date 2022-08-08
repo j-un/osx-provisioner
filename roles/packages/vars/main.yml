@@ -42,7 +42,6 @@ homebrew_cask_packages:
   - { name: visual-studio-code }
   - { name: keyboardcleantool }
   - { name: aws-vault }
-  - { name: bitwarden }
   - { name: google-cloud-sdk }
   - { name: notion }
   - { name: openmtp }
