@@ -26,7 +26,6 @@ homebrew_packages:
   - { name: httping }
   - { name: buildpacks/tap/pack }
 homebrew_cask_packages:
-  - { name: iterm2 }
   - { name: google-chrome }
   - { name: the-unarchiver }
   - { name: alfred }
