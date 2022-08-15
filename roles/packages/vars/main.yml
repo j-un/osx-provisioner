@@ -29,13 +29,11 @@ homebrew_cask_packages:
   - { name: google-chrome }
   - { name: the-unarchiver }
   - { name: alfred }
-  - { name: shiftit }
   - { name: docker }
   - { name: firefox }
   - { name: appcleaner }
   - { name: spotify }
   - { name: keka }
-  - { name: cmd-eikana }
   - { name: kindle }
   - { name: spotmenu }
   - { name: visual-studio-code }
@@ -46,6 +44,7 @@ homebrew_cask_packages:
   - { name: openmtp }
   - { name: karabiner-elements }
   - { name: alacritty }
+  - { name: hammerspoon }
 homebrew_packages_work:
   - { name: ctags }
   - { name: php-code-sniffer }
