@@ -67,3 +67,8 @@ eval "$(anyenv init -)"
 # なぜか後から追加したユーザでタブ補完が有効にならないので暫定的で
 autoload -Uz compinit
 compinit -u
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/jun/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
