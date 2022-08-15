@@ -11,3 +11,4 @@ dotfiles_name:
   - .ctags
   - .alacritty.yml
   - .config/karabiner/
+  - .hammerspoon/
