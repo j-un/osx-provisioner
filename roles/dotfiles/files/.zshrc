@@ -12,16 +12,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# env
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export EDITOR="vim"
-export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:${HOME}/.gem/ruby/2.3.0:/opt/homebrew/opt/openjdk/bin:${PATH}
-export MANPATH=$(brew --prefix)/opt/coreutils/libexec/gnuman:${MANPATH}
-export LESSOPEN="| src-hilite-lesspipe.sh %s"
-export LESS=" -R "
-## LS_COLORS and tab completion color are set here (I couldn't setup this in prezto...)
-export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
-
 if [ -e "$HOME/go" ]; then
   export GOPATH="$HOME/go"
   export GOBIN="$GOPATH/bin"
@@ -39,6 +29,10 @@ alias vas="vagrant ssh"
 alias vah="vagrant halt"
 
 alias m='(){ (cd ~/.macbook-provisioning; make $1) }'
+
+# bindkey
+bindkey ƒ emacs-forward-word	# Option + f
+bindkey ∫ emacs-backward-word	# Option + b
 
 # for tmux window name
 function ssh() {
@@ -67,6 +61,16 @@ eval "$(anyenv init -)"
 # なぜか後から追加したユーザでタブ補完が有効にならないので暫定的で
 autoload -Uz compinit
 compinit -u
+
+# env
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export EDITOR="vim"
+export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:${GOPATH}/bin:${HOME}/.gem/ruby/2.3.0:/opt/homebrew/opt/openjdk/bin:${PATH}
+export MANPATH=$(brew --prefix)/opt/coreutils/libexec/gnuman:${MANPATH}
+export LESSOPEN="| src-hilite-lesspipe.sh %s"
+export LESS=" -R "
+## LS_COLORS and tab completion color are set here (I couldn't setup this in prezto...)
+export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/jun/.rd/bin:$PATH"
