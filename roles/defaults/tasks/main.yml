@@ -16,6 +16,15 @@
     value: false
     state: present
 
+# スペースバー2回でピリオド入力無効
+- name: "NSAutomaticPeriodSubstitutionEnabled -> false"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticPeriodSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
 ## TODO: これだけだと反映されない
 # マウスのスクロール速度
 - name: "com.apple.scrollwheel.scaling -> 0.75"
