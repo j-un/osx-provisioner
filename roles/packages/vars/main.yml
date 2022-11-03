@@ -67,6 +67,7 @@ homebrew_packages_home:
   - { name: hugo }
 homebrew_cask_packages_home:
   - { name: vlc }
+  - { name: homebrew/cask-drivers/elektron-transfer }
 gem_packages:
   - { name: terraforming }
   - { name: iStats }
