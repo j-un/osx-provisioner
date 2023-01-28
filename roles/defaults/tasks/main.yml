@@ -75,15 +75,7 @@
     state: present
   notify: "Restart Finder"
 
-# メニューバーに音量を常に配置(以下2つともに必要)
-- name: "com.apple.controlcenter NSStatusItem Visible Sound -> true"
-  osx_defaults:
-    domain: com.apple.controlcenter
-    key: "NSStatusItem Visible Sound"
-    type: bool
-    value: true
-    state: present
-
+# メニューバーに音量を常に配置
 - name: "com.apple.controlcenter Sound -> 18"
   osx_defaults:
     domain: com.apple.controlcenter
@@ -91,6 +83,16 @@
     key: Sound
     type: int
     value: 18
+    state: present
+
+# メニューバーのファストユーザスイッチ非表示
+- name: "com.apple.controlcenter UserSwitcher -> 28"
+  osx_defaults:
+    domain: com.apple.controlcenter
+    host: currentHost
+    key: UserSwitcher
+    type: int
+    value: 28
     state: present
 
 # ライブ変換無効
