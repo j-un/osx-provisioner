@@ -85,7 +85,7 @@
     value: 18
     state: present
 
-# メニューバーのファストユーザスイッチ非表示
+# メニューバーにファストユーザスイッチ非表示
 - name: "com.apple.controlcenter UserSwitcher -> 28"
   osx_defaults:
     domain: com.apple.controlcenter
@@ -93,6 +93,16 @@
     key: UserSwitcher
     type: int
     value: 28
+    state: present
+
+# メニューバーにSpotLight非表示
+- name: "com.apple.Spotlight MenuItemHidden -> 1"
+  osx_defaults:
+    domain: com.apple.Spotlight
+    host: currentHost
+    key: MenuItemHidden
+    type: bool
+    value: true
     state: present
 
 # ライブ変換無効
