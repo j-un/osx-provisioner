@@ -26,6 +26,7 @@ homebrew_packages:
   - { name: httping }
   - { name: buildpacks/tap/pack }
   - { name: pwgen }
+  - { name: ykman }
 homebrew_cask_packages:
   - { name: google-chrome }
   - { name: the-unarchiver }
