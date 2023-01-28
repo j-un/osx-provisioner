@@ -75,7 +75,8 @@
     state: present
   notify: "Restart Finder"
 
-# メニューバーに音量を常に配置
+# メニューバー関連
+## 音量を常に配置
 - name: "com.apple.controlcenter Sound -> 18"
   osx_defaults:
     domain: com.apple.controlcenter
@@ -85,7 +86,7 @@
     value: 18
     state: present
 
-# メニューバーにファストユーザスイッチ非表示
+## ファストユーザスイッチ非表示
 - name: "com.apple.controlcenter UserSwitcher -> 28"
   osx_defaults:
     domain: com.apple.controlcenter
@@ -95,8 +96,8 @@
     value: 28
     state: present
 
-# メニューバーにSpotLight非表示
-- name: "com.apple.Spotlight MenuItemHidden -> 1"
+## Spotlight非表示
+- name: "com.apple.Spotlight MenuItemHidden -> true"
   osx_defaults:
     domain: com.apple.Spotlight
     host: currentHost
@@ -104,6 +105,16 @@
     type: bool
     value: true
     state: present
+
+## Siri非表示
+# これではダメだった
+# - name: "com.apple.Siri StatusMenuVisible -> false"
+#   osx_defaults:
+#     domain: com.apple.Siri
+#     key: StatusMenuVisible
+#     type: bool
+#     value: true
+#     state: present
 
 # ライブ変換無効
 - name: "com.apple.inputmethod.Kotoeri JIMPrefLiveConversionKey -> false"
